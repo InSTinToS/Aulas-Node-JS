@@ -1,0 +1,15 @@
+<h1>List of posts:</h1>
+
+<ul>
+  {{#each posts}}
+    <li>
+      <p>{{dataValues.title}}</p>
+      <p>{{dataValues.content}}</p>
+      <hr>
+
+      <a href="/delete/{{id}}">
+        <button>Delete</button>  
+      </a>
+    </li>
+  {{/each}}
+</ul>
